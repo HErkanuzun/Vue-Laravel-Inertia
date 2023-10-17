@@ -1,8 +1,18 @@
 <template>
-    <div>Index</div>
+       <div>Index</div>
     <Link :href="route('show')">Show Page</Link>
-  </template>
+    <div>
+      The message is {{ message }}
+    </div>
+</template>
   
-  <script setup>
+<script setup>
   import { Link } from '@inertiajs/vue3'
-  </script>
+  defineProps(['message'])
+</script>
+<script>
+import MainLayout from '../../Layouts/MainLayout.vue'
+export default {
+  layout: MainLayout
+}
+</script>
