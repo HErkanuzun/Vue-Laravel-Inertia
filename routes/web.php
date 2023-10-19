@@ -17,14 +17,6 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Index/Index', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
 
 Route::middleware([
     'auth:sanctum',
@@ -35,5 +27,5 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
-Route::get('/index',[IndexController::class, 'index'])->name('index');
+Route::get('/',[IndexController::class, 'index'])->name('index');
 Route::get('/show',[IndexController::class, 'show'])->name('show');
