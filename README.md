@@ -1,7 +1,7 @@
 # Hi, I'm Erkan! 👋
 
 #  Master Laravel, Vue 3 & Inertia Full Stack 2023 Project
-<p><a href="https://laravel.com/" target="_blank" rel="noopener noreferrer"><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel Logo"></a><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a><a href="https://laravel.com/" target="_blank" rel="noopener noreferrer"><img width="100" src="https://avatars.githubusercontent.com/u/47703742?s=280&v=4" alt="Inertia logo"></a></p>
+<p><a href="https://laravel.com/" target="_blank" rel="noopener noreferrer"><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel Logo"></a><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a><a href="https://inertiajs.com/" target="_blank" rel="noopener noreferrer"><img width="100" src="https://avatars.githubusercontent.com/u/47703742?s=280&v=4" alt="Inertia logo"></a></p>
 
 
 ## Terminal Commands Used on project
