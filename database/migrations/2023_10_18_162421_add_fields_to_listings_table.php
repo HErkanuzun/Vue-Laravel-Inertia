@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::table('listings', function (Blueprint $table) {
             $table->unsignedTinyInteger('beds');
-            $table->unsignedTinyInteger('beths');
-            $table->unsignedTinyInteger('area');
+            $table->unsignedTinyInteger('baths');
+            $table->unsignedSmallInteger('area');
 
             $table->tinyText('city');
             $table->tinyText('code');
