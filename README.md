@@ -41,7 +41,7 @@ php artisan make:factory FactoryNameFactory`this code
 - Get in terminal if are uses on the vscode terminal tinker not word correctly then you must use a terminal.
 - Opening code is 
 ```bash
-php artisan tinke
+php artisan tinker
 ```
 - You can run every php code on this section sql query some php functions ex.
 - Then if you use any factoru on the project you can add some dummby file with `'tablename'->`
