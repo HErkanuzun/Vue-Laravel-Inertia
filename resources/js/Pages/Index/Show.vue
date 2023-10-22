@@ -1,15 +1,14 @@
 <template>
-    <div>Show</div>
-    <Link :href="route('index')">Index Page</Link>
-  </template>
-  
-  <script setup>
-  import { Link } from '@inertiajs/vue3'
-  </script>
-  
-  <script>
+  <div>{{ listing }}</div>
+  <div></div>
+  <div></div>
+  <div></div>
+</template>
+ 
+<script setup>
     import MainLayout from '../../Layouts/MainLayout.vue'
-    export default {
-      layout: MainLayout
-    }
-  </script>
+    defineProps({
+      listing: Object,
+    })
+
+</script>

@@ -37,8 +37,9 @@ services:
 ### Factory and Seeder usage
 - You can create a factory with 
 ```bash
-php artisan make:factory FactoryNameFactory`this code 
+php artisan make:factory FactoryNameFactory
 ```
+`this code` 
 - You have to define unnullable columns on deffination array on factory file.
 - You must define every mandatory colums with correct tags.
 - Some usefull tags 'sentence()', 'date()', 'realText()', 'streetName()', 'city()','postcode()','numberBetween(x,y)'

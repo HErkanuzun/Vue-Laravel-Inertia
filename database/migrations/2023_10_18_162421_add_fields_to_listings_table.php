@@ -31,7 +31,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropColumns('listings' , [
-            'beds','baths', 'area', 'code', 'street', 'street_nr', 'price'
+            'beds','baths', 'area','city', 'code', 'street', 'street_nr', 'price'
         ]);
     }
 };
