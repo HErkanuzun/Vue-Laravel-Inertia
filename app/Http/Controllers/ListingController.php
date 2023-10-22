@@ -26,8 +26,10 @@ class ListingController extends Controller
      * Show the form for creating a new resource.
      */
     public function create()
-    {
+    {  
+        
         return inertia('Listing/Create');
+      
     }
     /**
      * Store a newly created resource in storage.
@@ -35,8 +37,7 @@ class ListingController extends Controller
     public function store(Request $request)
     {
         Listing::create($request->all());
-        return redirect()->route('listing.index')
-        ->with('success','Listing was created!');
+        return redirect()->route('listing.index')->with('success',"Success!");
     }
 
     /**

@@ -1,4 +1,5 @@
 <template>
+  <div></div>
     <form @submit.prevent="create">
       <div>
         <div>
@@ -50,7 +51,7 @@
   <script setup>
 
   import { useForm } from '@inertiajs/vue3';
-
+  import { usePage } from '@inertiajs/vue3';
     const form = useForm({
         beds: 0,
         baths:0,
@@ -61,7 +62,7 @@
         code:null,
         price:0,
     })
-
+    const page = usePage();
     const create = () => form.post('/listing')
 
     const x = form.beds
