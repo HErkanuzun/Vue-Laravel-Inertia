@@ -14,7 +14,7 @@ class ListingController extends Controller
     public function index()
     {
         
-        return Inertia(
+        return Inertia::render(
             'Listing/Index',
             [
                 'listings' => Listing::all()
@@ -27,22 +27,24 @@ class ListingController extends Controller
      */
     public function create()
     {
-        //
+        return inertia('Listing/Create');
     }
-
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        //
+        Listing::create($request->all());
+        return redirect()->route('listing.index')
+        ->with('success','Listing was created!');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Listing  $listing)
+    public function show(Listing $listing)
     {
+       
         return Inertia::render(
             'Listing/Show',
             [

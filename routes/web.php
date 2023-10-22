@@ -31,4 +31,4 @@ Route::middleware([
 Route::get('/',[IndexController::class, 'index'])->name('index');
 Route::get('/show',[IndexController::class, 'show'])->name('show');
 
-Route::resource('listing', ListingController::class)->only((['index','show']));
+Route::resource('listing', ListingController::class)->only((['index','show','create','store']));
