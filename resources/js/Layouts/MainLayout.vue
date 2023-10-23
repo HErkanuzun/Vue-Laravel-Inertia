@@ -6,16 +6,25 @@
 
 <!--<div>The Page with time {{ timer }}</div>
     <div>The Page with time {{ dnm }}</div> -->
-     <div v-if="page.props.flash.success" class="success">{{page.props.flash.success}} </div>
-
+     <div v-if="flashSuccess" class="success">{{ flashSuccess }} </div>
+    <!-- <div>{{ y }}</div> -->
     <slot>Default</slot>
 </template>
 
 <script setup>
     import { Link, usePage} from '@inertiajs/vue3'
     import { ref } from 'vue'
-    const page = usePage()
-    console.log(page.props)   
+    import { computed } from 'vue';
+
+/*     const x = ref (0)
+    const y = computed(()=>x.value * 2) */
+
+    const page = usePage()   
+    const flashSuccess = computed(
+        ()=> page.props.flash.success,
+    )
+
+
     //page.props.valiu.flash.success
 
 

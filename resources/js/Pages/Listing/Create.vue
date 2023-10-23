@@ -5,6 +5,9 @@
         <div>
           <label>Beds</label>
           <input v-model.number="form.beds" type="text" />
+          <div v-if="form.errors.beds">
+            {{ form.errors.beds }}
+          </div>
         </div>
   
         <div>
@@ -62,7 +65,9 @@
         code:null,
         price:0,
     })
+    
     const page = usePage();
+    
     const create = () => form.post('/listing')
 
     const x = form.beds

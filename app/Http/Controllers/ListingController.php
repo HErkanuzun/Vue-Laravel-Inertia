@@ -27,7 +27,6 @@ class ListingController extends Controller
      */
     public function create()
     {  
-        
         return inertia('Listing/Create');
       
     }
@@ -36,8 +35,16 @@ class ListingController extends Controller
      */
     public function store(Request $request)
     {
-        Listing::create($request->all());
-        return redirect()->route('listing.index')->with('success',"Success!");
+        Listing::create([
+            $request->all(),
+            $request->validate([
+                'bed' => 'required|integer|min:0|max:20',
+                'bath' => 'required|integer|min:0|max:20',
+                'area' => 'required|integer|min:0|max:10000'
+            ])
+        ]);
+        return redirect()->route('listing.index')
+        ->with('success',"Success!");
     }
 
     /**
